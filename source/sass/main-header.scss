@@ -1,0 +1,52 @@
+.main-header {
+  padding-top: 10px;
+  &__container {
+    @include clearfix;
+  }
+}
+
+.logo {
+  position: relative;
+  float: left;
+  width: 194px;
+  @include yellowline;
+  &::after {
+    right: -32px;
+    bottom: 4px;
+  }
+  &__text1 {
+    display: block;
+    font-size: 18px;
+    font-weight: $extrabold;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    color: #000;
+  }
+  &__text2 {
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #b6b6b6;
+    span {
+      font-weight: $bold;
+    }
+  }
+}
+
+.main-nav {
+  float: right;
+  width: 79%;
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item--active {
+    box-shadow: 0 4px 0 -1px #e2e41f;
+  }
+  &__item a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}

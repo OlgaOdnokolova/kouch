@@ -1,0 +1,44 @@
+.review-slaider {
+  position: relative;
+  height: 637px;
+  margin-bottom: 63px;
+  margin-right: -16px;
+  padding-top: 70px;
+  padding-left: 48px;
+  background-color: #000;
+  color: #fff;
+  &::before {
+    content: "";
+    display: table;
+    position: absolute;
+    top: -196px;
+    left: -118px;
+    width: 215px;
+    height: 750px;
+    border: 10px solid $yellow;
+  }
+  &__title {
+    padding-left: 210px;
+    margin-bottom: 16px;
+    font-family: $proxima-nova;
+    font-weight: $bold;
+    font-size: 18px;
+  }
+  &__photo {
+    float: left;
+    padding-top: 65px;
+    margin-right: 59px;
+  }
+  &__content {
+    float: left;
+    width: 348px;
+  }
+  &__author {
+    margin-bottom: 26px;
+  }
+  &__text {
+    font-style: italic;
+    height: 355px;
+    overflow: hidden;
+  }
+}

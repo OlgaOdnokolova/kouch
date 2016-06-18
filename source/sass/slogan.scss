@@ -1,0 +1,19 @@
+.slogan {
+  margin-bottom: 70px;
+  padding: 125px 70px;
+  font-family: $proxima-nova;
+  font-size: 30px;
+  line-height: 48px;
+  font-weight: $bold;
+  color: #fff;
+  text-align: center;
+  background: url("../img/slogan-bg.jpg") no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 1240px) {
+  .slogan {
+    margin-bottom: 50px;
+    padding-top: 95px;
+  }
+}

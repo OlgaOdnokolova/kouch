@@ -1,0 +1,73 @@
+.price {
+  &__item {
+    position: relative;
+    min-height: 145px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url("../img/price-smallbg.jpg");
+    background-repeat: repeat-x;
+    background-position-y: 78%;
+  }
+  &__item::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    width: 113px;
+    height: 100%;
+    font-family: $proxima-nova;
+    font-size: 150px;
+    line-height: 110px;
+    font-weight: $extrabold;
+    font-style: italic;
+    color: $yellow;
+    background-color: #fff;
+    z-index: 1;
+  }
+  &__item:first-child::before {
+    content: "1";
+  }
+  &__item:nth-child(2)::before {
+    content: "2";
+  }
+  &__item:nth-child(3)::before {
+    content: "3";
+  }
+  &__item:nth-child(4)::before {
+    content: "4";
+  }
+  &__text-bold {
+    position: relative;
+    z-index: 10;
+    display: block;
+    font-weight: $bold;
+    font-size: 18px;
+    line-height: 24px;
+    span {
+      font-style: italic;
+    }
+  }
+  &__text-small {
+    position: relative;
+    z-index: 10;
+    display: block;
+    line-height: 24px;
+  }
+  &__number {
+    font-family: $proxima-nova;
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: $extrabold;
+  }
+}
+
+@media (max-width: 1328px) {
+  .price__text-bold {
+    font-size: 16px;
+  }
+  .price__number {
+    font-size: 46px;
+  }
+}
+

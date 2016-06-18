@@ -1,0 +1,42 @@
+.list-square {
+  li {
+    position: relative;
+    padding-left: 10px;
+  }
+  li::before {
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 14px;
+  }
+}
+
+.list-line {
+  li {
+    position: relative;
+    padding-left: 22px;
+  }
+  li::before {
+    content: "";
+    width: 13px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 15px;
+  }
+}
+
+.list-line--white {
+  li::before {
+    background: #fff;
+  }
+}
+
+.list-number {
+  margin: 0;
+  padding-left: 15px;
+}

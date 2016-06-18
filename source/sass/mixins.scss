@@ -1,0 +1,18 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin yellowline {
+  &::after {
+    content: "";
+    position: absolute;
+    height: 34px;
+    width: 3px;
+    background: $yellow;
+    transform: skewX(20deg);
+  }
+}

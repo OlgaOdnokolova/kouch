@@ -1,0 +1,71 @@
+.reviews {
+  .block-top__container {
+    display: block;
+  }
+  .block-top__title {
+    position: relative;
+    display: inline-block;
+  }
+}
+
+.reviews-number {
+  position: absolute;
+  right: -132px;
+  top: -32px;
+  color: #e2e41f;
+  font-family: "Proxima Nova", Arial, Verdana, sans-serif;
+  font-weight: 800;
+  font-size: 97px;
+  line-height: 110px;
+}
+
+.review {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__content {
+    position: relative;
+    width: 67%;
+    padding-top: 70px;
+    line-height: 24px;
+  }
+  &__content::before {
+    position: absolute;
+    content: "";
+    width: 67px;
+    height: 47px;
+    display: table;
+    top: 0;
+    background: url("../img/quote.jpg") no-repeat;
+  }
+  &__author {
+    margin-bottom: 29px;
+    font-family: $proxima-nova;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: $bold;
+  }
+  &__text {
+    margin-bottom: 25px;
+  }
+  &__read-more {
+    display: block;
+    font-weight: $bold;
+    text-decoration: underline;
+    text-align: right;
+  }
+  &__photo {
+    width: 324px;
+    height: 324px;
+    background-color: #0086b3;
+    img {
+      width: 324px;
+      height: 324px;
+    }
+  }
+}
+
+.review:nth-child(odd) {
+  flex-direction: row-reverse;
+}

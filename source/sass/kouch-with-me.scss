@@ -1,0 +1,57 @@
+.kouch-with-me {
+  .block-top {
+    min-height: 1102px;
+  }
+  .block-top__col1 {
+    padding-right: 6%;
+  }
+  .block-top__title {
+    margin-bottom: 172px;
+  }
+  .block-top::before {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    width: 960px;
+    height: 1175px;
+    background-image: url("../img/kouch-with-me-bg1.jpg");
+  }
+  .block-middle__col1, .block-middle__col2 {
+    padding-bottom: 51px;
+  }
+  .block-middle__col1 .content {
+    padding-right: 17%;
+  }
+  .block-middle__col2 .content:first-child {
+    margin-bottom: 197px;
+  }
+  .block-bottom {
+    position: relative;
+    min-height: 780px;
+    padding-top: 80px;
+    color: #fff;
+    background: #3967ab;
+  }
+  .block-bottom::before {
+    content: " ";
+    position: absolute;
+    width: 761px;
+    height: 820px;
+    background-image: url("../img/kouch-with-me-bg2.jpg");
+    bottom: 0;
+    right: 50%;
+    z-index: 1;
+  }
+  .block-bottom__col1, .block-bottom__col2 {
+    padding-bottom: 51px;
+  }
+  .block-bottom .content {
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 1359px) {
+  .kouch-with-me .block-middle__col2 .content:first-child {
+    margin-bottom: 137px;
+  }
+}

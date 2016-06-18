@@ -1,0 +1,22 @@
+.price-page {
+  .block-top__container {
+    flex-wrap: wrap;
+  }
+  .block-top__col1 {
+    width: 70%;
+    padding-right: 0;
+    padding-bottom: 100px;
+  }
+  .block-top__col2 {
+    width: 30%;
+    padding-left: 3.7%;
+    padding-bottom: 120px;
+    padding-top: 46px;
+  }
+  .block-top__col2 .content {
+    margin-bottom: 28px;
+  }
+  .block-top__col2 .content:last-child {
+    padding-top: 18px;
+  }
+}

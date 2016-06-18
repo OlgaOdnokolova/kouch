@@ -1,0 +1,13 @@
+.photo-slaider {
+  margin-left: -16px;
+  height: 450px;
+  img {
+    max-height: 450px;
+  }
+}
+
+@media (max-width: 1359px) {
+  .photo-slaider {
+    background-color: #0d1015;
+  }
+}

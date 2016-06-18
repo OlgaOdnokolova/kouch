@@ -1,0 +1,21 @@
+.content {
+  margin-bottom: 62px;
+  &__title {
+    margin-bottom: 21px;
+    font-family: $proxima-nova;
+    font-size: 18px;
+    font-weight: $bold;
+  }
+  &--text-white {
+    color: #fff;
+    a {
+      color: #fff;
+    }
+  }
+  &__tel {
+    color: #000;
+  }
+  &__link {
+    color: #000;
+  }
+}

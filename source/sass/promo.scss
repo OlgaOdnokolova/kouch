@@ -1,0 +1,45 @@
+.promo {
+  margin-left: 10px;
+  padding-top: 570px;
+  color: #fff;
+  font-family: $proxima-nova;
+  font-weight: $bold;
+  font-size: 18px;
+  &__big {
+    margin: 35px 0 20px 0;
+    font-weight: $extrabold;
+    font-size: 100px;
+    line-height: 100px;
+    text-transform: uppercase;
+  }
+  &__span1 {
+    display: inline-block;
+    box-shadow: 0 0 0 10px #e2e41f;
+    margin-right: 37px;
+    padding: 7px 15px 0 15px;
+    margin-bottom: 15px;
+  }
+  &__span2 {
+    padding-left: 11px;
+  }
+  &__div1 {
+    margin-left: -10px;
+  }
+  &__div2 {
+    margin-left: 20px;
+    ul li {
+      position: relative;
+      padding-left: 35px;
+    }
+    ul li::before {
+      content: " ";
+      position: absolute;
+      left: 0;
+      top: 13px;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: #fff;
+    }
+  }
+}

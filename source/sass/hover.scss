@@ -1,0 +1,37 @@
+.main-nav__item {
+  transition: ease-out 0.3s;
+}
+
+.main-nav__item:hover {
+  box-shadow: 0 4px 0 -1px #e2e41f;
+  cursor: pointer;
+}
+
+.review__read-more {
+  transition: ease-out 0.3s;
+}
+
+.review__read-more:hover {
+  color: #cbcd31;
+  cursor: pointer;
+}
+
+.feedback__btn:hover {
+  background: #fcff00;
+}
+.feedback__btn:active {
+  transform: scale(0.9);
+}
+
+.social__item a {
+  transition: ease-out 0.3s;
+}
+
+.social__item a:hover {
+  color: $yellow;
+}
+
+.content__link:hover, .content__tel:hover {
+  color: $yellow-slaider;
+  transition: ease-out 0.3s;
+}

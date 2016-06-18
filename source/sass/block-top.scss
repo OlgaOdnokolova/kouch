@@ -1,0 +1,21 @@
+.block-top {
+  position: relative;
+  padding-top: 18px;
+  overflow: hidden;
+  &__container {
+    display: flex;
+  }
+  &__title {
+    margin-top: 121px;
+    margin-bottom: 131px;
+    font-family: $proxima-nova;
+    font-size: 150px;
+    line-height: 110px;
+    font-weight: $extrabold;
+  }
+  &__col1 {
+    padding-right: 7%;
+  }
+}
+
+

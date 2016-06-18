@@ -1,0 +1,19 @@
+.block-middle {
+  position: relative;
+  &__container {
+    display: flex;
+    position: relative;
+    z-index: 10;
+  }
+  &__col2 {
+    padding-top: 112px;
+  }
+  &__title {
+    margin-bottom: 59px;
+    font-family: $proxima-nova;
+    font-weight: $extrabold;
+    font-size: 72px;
+    line-height: 72px;
+    text-transform: uppercase;
+  }
+}

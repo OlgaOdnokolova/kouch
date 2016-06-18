@@ -1,0 +1,134 @@
+.feedback {
+  padding-bottom: 85px;
+  background: url("../img/feedback-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  form {
+    display: flex;
+  }
+  &__col1, &__col2 {
+    width: 50%;
+  }
+  &__col1 {
+    padding-top: 205px;
+    padding-left: 2.5%;
+  }
+  &__col2 {
+    padding-top: 97px;
+  }
+  &__title {
+    margin-bottom: 18px;
+    font-family: $proxima-nova;
+    font-weight: $extrabold;
+    font-size: 56px;
+    line-height: 90px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  &__block {
+    width: 90%;
+    margin-bottom: 30px;
+    label {
+      display: block;
+      font-family: $proxima-nova;
+      font-size: 18px;
+      font-weight: $bold;
+    }
+    input {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      padding: 15px 0 15px 18px;
+      font-family: $proxima-nova;
+      font-size: 18px;
+      border: none;
+      outline: 1px solid #e3e3e3;
+    }
+    input:focus {
+      outline: 2px solid $yellow;
+    }
+  }
+  &__col2 {
+    label {
+      display: block;
+      font-family: $proxima-nova;
+      font-size: 18px;
+      font-weight: $bold;
+      color: #fff;
+    }
+    textarea {
+      box-sizing: border-box;
+      max-width: 504px;
+      display: block;
+      margin-bottom: 39px;
+      padding-left: 18px;
+      font-family: $proxima-nova;
+      font-size: 18px;
+      border: none;
+      outline: 1px solid #e3e3e3;
+    }
+    textarea:focus {
+      outline: 2px solid $yellow;
+    }
+  }
+  &__wrap-btn {
+    width: 94%;
+    text-align: center;
+  }
+  &__btn {
+    box-sizing: border-box;
+    width: 235px;
+    padding: 10px 0;
+    font-family: $proxima-nova;
+    font-size: 18px;
+    font-weight: $bold;
+    background: $yellow;
+    outline: none;
+    border: none;
+  }
+}
+
+
+.feedback--trial {
+    background: url("../img/feedback-bg2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  form {
+    position: relative;
+  }
+  .feedback__col2 {
+    padding-top: 203px;
+  }
+  .feedback__title {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 61px;
+    font-size: 43px;
+    line-height: 90px;
+    text-align: center;
+  }
+  label {
+    color: #fff;
+  }
+  .feedback__btn {
+    width: 504px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .feedback {
+    background-size: inherit;
+
+  }
+}
+
+@media (min-width: 1360px) {
+  .feedback--trial .feedback__title {
+    width: 98%;
+    font-size: 48px;
+  }
+  .feedback__wrap-btn {
+    width: 88%;
+  }
+}

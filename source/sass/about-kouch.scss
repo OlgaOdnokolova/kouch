@@ -1,0 +1,48 @@
+.about-kouch {
+  .block-top {
+    min-height: 1171px;
+  }
+  .block-top::before {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    width: 960px;
+    height: 1244px;
+    background-image: url("../img/about-kouch-bg1.jpg");
+  }
+  .block-middle {
+    min-height: 998px;
+  }
+  .block-middle::before {
+    content: " ";
+    position: absolute;
+    width: 960px;
+    height: 998px;
+    background-image: url("../img/about-kouch-bg2.jpg");
+    bottom: 0;
+    right: 50%;
+    z-index: 1;
+  }
+  .block-middle__col1 {
+    padding-right: 7%;
+    padding-top: 120px;
+  }
+  .block-bottom {
+    min-height: 493px;
+    background: url("../img/about-kouch-bg3.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .block-bottom__container {
+    justify-content: flex-end;
+  }
+  .block-bottom__col2 {
+    padding-top: 75px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .about-kouch .block-bottom {
+    background-size: contain;
+  }
+}
