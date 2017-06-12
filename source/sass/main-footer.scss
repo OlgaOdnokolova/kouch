@@ -19,9 +19,6 @@
   position: relative;
   padding-top: 15px;
   @include yellowline;
-  &:first-child {
-    padding-top: 0;
-  }
   &::after {
     right: -86px;
     bottom: 5px;

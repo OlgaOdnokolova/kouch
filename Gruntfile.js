@@ -81,6 +81,7 @@ module.exports = function(grunt) {
             "index.html",
             "about-kouch.html",
             "kouching-with-me.html",
+            "books.html",
             "price.html",
             "contacts.html",
             "reviews.html",

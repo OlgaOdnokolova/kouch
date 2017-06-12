@@ -1,20 +1,19 @@
 .feedback {
-  padding-bottom: 85px;
-  background: url("../img/feedback-bg.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
   form {
     display: flex;
+    background: url("../img/feedback-bg.jpg") no-repeat;
+    background-size: contain;
+    background-position: center;
   }
   &__col1, &__col2 {
     width: 50%;
   }
   &__col1 {
-    padding-top: 205px;
-    padding-left: 2.5%;
+    padding-left: 8%;
+    padding-top: 75px;
   }
   &__col2 {
-    padding-top: 97px;
+    padding-left: 3% !important;
   }
   &__title {
     margin-bottom: 18px;
@@ -72,8 +71,8 @@
     }
   }
   &__wrap-btn {
-    width: 94%;
-    text-align: center;
+    //width: 94%;
+    //text-align: center;
   }
   &__btn {
     box-sizing: border-box;
@@ -90,29 +89,30 @@
 
 
 .feedback--trial {
+  form {
+    position: relative;
     background: url("../img/feedback-bg2.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-  form {
-    position: relative;
   }
+  .feedback__col1 {
+    padding-top: 110px;
+  }
+
   .feedback__col2 {
-    padding-top: 203px;
+    padding-top: 112px;
   }
   .feedback__title {
     position: absolute;
     width: 100%;
     left: 0;
-    top: 61px;
+    top: 0;
     font-size: 43px;
     line-height: 90px;
     text-align: center;
   }
   label {
     color: #fff;
-  }
-  .feedback__btn {
-    width: 504px;
   }
 }
 
@@ -127,8 +127,5 @@
   .feedback--trial .feedback__title {
     width: 98%;
     font-size: 48px;
-  }
-  .feedback__wrap-btn {
-    width: 88%;
   }
 }
