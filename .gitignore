@@ -6,7 +6,6 @@ prepros.cfg
 *.sublime*
 *.map
 css/*.css
-build/
 /.sass-cache
 
 .idea/
